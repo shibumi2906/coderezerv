@@ -51,8 +51,11 @@ def main_loop():
     screen = pygame.display.set_mode((800, 600))
     pygame.display.set_caption("Визуальная Новелла 'Тайны Старого Маяка'")
 
+    # Получаем абсолютный путь к файлу звуковой дорожки
+    sound_path = os.path.join(os.path.dirname(__file__), 'music', 'story_sound.mp3')
+
     # Загрузка и воспроизведение фоновой музыки
-    pygame.mixer.music.load(os.path.join(os.path.dirname(__file__), 'story_sound.mp3'))
+    pygame.mixer.music.load(sound_path)
     pygame.mixer.music.play(-1)  # Воспроизведение на повторении
 
     global message_index
