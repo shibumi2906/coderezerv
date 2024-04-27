@@ -52,7 +52,7 @@ def main_loop():
     pygame.display.set_caption("Визуальная Новелла 'Тайны Старого Маяка'")
 
     # Загрузка и воспроизведение фоновой музыки
-    pygame.mixer.music.load('background_music.mp3')
+    pygame.mixer.music.load(os.path.join(os.path.dirname(__file__), 'story_sound.mp3'))
     pygame.mixer.music.play(-1)  # Воспроизведение на повторении
 
     global message_index
