@@ -201,9 +201,10 @@ def main_loop():
         if message_index < len(messages):
 
             # words = messages[message_index].message.split()
-            # message_item = messages[message_index]
-            # print(message_item)
+            # # message_item = messages[message_index]
+            # # print(message_item)
             # print(words)
+
 
             messages[message_index].screen_blit(screen)
 
