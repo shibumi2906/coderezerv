@@ -2,6 +2,7 @@
 import pygame
 import sys
 import os
+import time
 
 class Story_messages():
     def __init__(self, scene_picture, hero_picture, hero_x, hero_y, message):
@@ -12,19 +13,20 @@ class Story_messages():
         self.message = message
 
     def screen_blit(self, screen):
+#Текст:
         text_color = (230, 230, 230)
-        font = pygame.font.Font(None, 36)
+        font = pygame.font.Font(None, 28)
         text_surface = font.render(self.message, True, text_color)
         text_rect = text_surface.get_rect()
-        text_rect.topleft = (40, 550)
-
-        obj_surface = pygame.Surface((600, 100))
+        text_rect.topleft = (40, 510)
+#Подложка под текст:
+        obj_surface = pygame.Surface((640, 140))
         obj_surface.fill((0, 0, 0))
         obj_surface.set_alpha(150)
 
         screen.blit(self.scene_picture, (0, 0))
         screen.blit(self.hero_picture, (self.hero_x, self.hero_y))
-        screen.blit(obj_surface, (50, 500))
+        screen.blit(obj_surface, (30, 500))
         screen.blit(text_surface, text_rect)
 
 class Button:
@@ -197,6 +199,12 @@ def main_loop():
 
         screen.fill((0, 0, 0))
         if message_index < len(messages):
+
+            # words = messages[message_index].message.split()
+            # message_item = messages[message_index]
+            # print(message_item)
+            # print(words)
+
             messages[message_index].screen_blit(screen)
 
         button.draw(screen)
