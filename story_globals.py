@@ -1,0 +1,32 @@
+# S.G. Mikhaylov
+# 27/04 15:00 ГОТОВ  (с возможными дополнениями в ходе отладки)
+
+# глобальные константы
+
+# события истории
+QUIT_STORY_WITHOUT_SAVING = 0
+QUIT_STORY_WITH_SAVING = 1
+HELP_STORY = 2
+ABOUT_STORY = 3
+START_STORY = 4
+CONTINUE_STORY = 5
+PREVIOUS_STORY = 6
+
+# рабочие экраны истории
+SCENE_QUIT_STORY_WITHOUT_SAVING_ID = 7
+SCENE_QUIT_STORY_WITH_SAVING_ID = 8
+SCENE_HELP_STORY_ID = 9
+SCENE_ABOUT_STORY_ID = 10
+SCENE_START_STORY_ID = 11
+SCENE_CONTINUE_STORY_ID = 12
+SCENE_PREVIOUS_STORY_ID = 13
+
+# частота кадров
+STORY_FPS = 30
+FONT_SIZE = 16
+FONT = "comicsansms"
+STORY_BACKGROUND_COLOR = (30, 20, 0)
+STORY_MESSAGE_COLOR = (192, 192, 192)
+STORY_SOUND = 'story_sound.mp3'
+RIGHT_ARRAY ='right_array.png'
+LEFT_ARRAY ='left_array.png'
