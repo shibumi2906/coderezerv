@@ -69,7 +69,6 @@ def main_loop():
 
     messages = [
         Story_messages('images/s001.png', 'images/p001.png', -300, 200, "Молодой журналист по имени Алекс"),
-        Story_messages('images/s001.png', 'images/p001.png', -300, 200, "Молодой журналист по имени Алекс"),
         Story_messages('images/s001.png', 'images/p001.png', -300, 200,
                        "прибывает в маленький прибрежный городок Хейвенбрук."),
         Story_messages('images/s001.png', 'images/p001.png', -300, 200,
